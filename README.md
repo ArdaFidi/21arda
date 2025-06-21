@@ -82,3 +82,13 @@ Deploying your new site to Vercel is simple, and can be done by following their 
 
 [![Forkers repo roster for @tbakerx/react-resume-template](https://reporoster.com/forks/dark/tbakerx/react-resume-template)](https://github.com/tbakerx/react-resume-template/network/members)
 
+
+## Tender Bulletin Downloader
+
+A script for downloading daily tender bulletins from the Turkish EKAP system is provided under `scripts/ekap_bulten_downloader.py`. It accepts a `config.json` file placed alongside the script specifying a `start_date`, `end_date`, and optional `reverse` flag. The script fetches bulletins for **MAL**, **YAPIM**, **HIZMET** and **DANISMANLIK** tenders and places the resulting ZIP files in a `zips/` folder.
+
+Run it with Python 3 after installing Selenium and its dependencies:
+
+```bash
+python scripts/ekap_bulten_downloader.py
+```
